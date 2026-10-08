@@ -34,7 +34,7 @@ def main():
     total = subtotal + tax + tip
 
  #prints receipt converting floats to have to decimal places with .2f
-    receipt = ["----","Receipt:",f"{coffees} x Coffee @ $2.25 = ${total_coffees:.2f}",f"{muffins} x Coffee @ $2.25 = ${total_muffins:.2f}",f"Subtotal:${subtotal:.2f}",f"Tax:${tax:.2f}",f"Tip:${tip:.2f}",f"Total:${total:.2f}"]
+    receipt = ["----","Receipt:",f"{coffees} x Coffee @ ${unit_price_c} = ${total_coffees:.2f}",f"{muffins} x Muffin @ ${unit_price_m} = ${total_muffins:.2f}",f"Subtotal:${subtotal:.2f}",f"Tax:${tax:.2f}",f"Tip:${tip:.2f}",f"Total:${total:.2f}"]
     for item in receipt:
         print (item)
 
